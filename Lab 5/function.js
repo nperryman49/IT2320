@@ -92,26 +92,26 @@ function GlobalVsLocalScope2()
 }
 
 const books = [
-    {title: "One of Us is Lying", author: "Karen McNamus", price: 10.70, country: US},
-    {title: "The Blood of Flowers", author:"Anita Amirrezvani", price: 17.65, country: US},
-    {title: "Jane Eyre", author : "Charlotte Bronte", price: 9.00, country: UK},
-    {title: "The Alchemist", author : "Paulo Coelho", price: 16.65, country: Brazil},
-    {title: "Persepolis", author : "Marjane Satrapi", price: 16.99, country: France},
-    {title: "Before the Coffee Gets Cold", author : "Toshikazu Kawaguchi", price: 18.95, country: UK},
-    {title: "Lost Girls", author : "Andrew Pyper", price: 18.65, country: Canada},
-    {title: "American Psycho", author : "Bret Easton Ellis", price: 12.65, country: US},
-    {title: "A House for Mr Biswas", author : "V. S. Naipaul", price: 16.48, country: UK},
-    {title: "The Miniaturist", author : "Jessie Burton", price: 14.99, country: UK},
-    {title: "Kokoro", author : "Sōseki Natsume", price: 17.99, country: Japan},
-    {title: "The Picture of Dorian Gray", author : "Oscar Wilde", price: 13.95, country: UK},
-    {title: "The Rumi Collection", author : "Jalaluddin Rumi", price: 14.68, country: US},
-    {title: "Things Fall Apart", author : "Chinua Achebe ", price: 11.89, country: Nigeria},
-    {title: "The Dinner Guest", author : "Gabriela Ybarra", price: 15.95, country: Spain},
-    {title: "Runs with Courage", author : "Joan Wolf", price: 9.95, country: US},
-    {title: "The Hound of the Baskervilles", author : "Arthur Conan Doyle", price: 8.30, country: UK},
-    {title: "Like Water for Chocolate", author : "Laura Esquival", price: 11.10, country: Mexico},
-    {title: "Anna Karenina", author : "Leo Tolstoy", price: 14.49, country: Russia},
-    {title: "The Stranger", author : "Albert Camus", price: 9.95, country: France}
+    {title: "One of Us is Lying", author: "Karen McNamus", price: 10.70, country: "US"},
+    {title: "The Blood of Flowers", author:"Anita Amirrezvani", price: 17.65, country: "US"},
+    {title: "Jane Eyre", author : "Charlotte Bronte", price: 9.00, country: "UK"},
+    {title: "The Alchemist", author : "Paulo Coelho", price: 16.65, country: "Brazil"},
+    {title: "Persepolis", author : "Marjane Satrapi", price: 16.99, country: "France"},
+    {title: "Before the Coffee Gets Cold", author : "Toshikazu Kawaguchi", price: 18.95, country: "UK"},
+    {title: "Lost Girls", author : "Andrew Pyper", price: 18.65, country: "Canada"},
+    {title: "American Psycho", author : "Bret Easton Ellis", price: 12.65, country: "US"},
+    {title: "A House for Mr Biswas", author : "V. S. Naipaul", price: 16.48, country: "UK"},
+    {title: "The Miniaturist", author : "Jessie Burton", price: 14.99, country: "UK"},
+    {title: "Kokoro", author : "Sōseki Natsume", price: 17.99, country: "Japan"},
+    {title: "The Picture of Dorian Gray", author : "Oscar Wilde", price: 13.95, country: "UK"},
+    {title: "The Rumi Collection", author : "Jalaluddin Rumi", price: 14.68, country: "US"},
+    {title: "Things Fall Apart", author : "Chinua Achebe ", price: 11.89, country: "Nigeria"},
+    {title: "The Dinner Guest", author : "Gabriela Ybarra", price: 15.95, country: "Spain"},
+    {title: "Runs with Courage", author : "Joan Wolf", price: 9.95, country: "US"},
+    {title: "The Hound of the Baskervilles", author : "Arthur Conan Doyle", price: 8.30, country: "UK"},
+    {title: "Like Water for Chocolate", author : "Laura Esquival", price: 11.10, country: "Mexico"},
+    {title: "Anna Karenina", author : "Leo Tolstoy", price: 14.49, country: "Russia"},
+    {title: "The Stranger", author : "Albert Camus", price: 9.95, country: "France"}
 ];
 
 
@@ -125,7 +125,7 @@ function getDiscountedPrice()
     )
 }   
        
-    getDiscount(country)
+    function getDiscount(country)
     {
     if (country= "US") 
     {price*.10;}
