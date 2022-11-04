@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create a JSON string from a JavaScript object.</h2>
+<p id="demo"></p>
+
+<script>
+var JSobj = {title: "One of Us Is Lying", author: "Karen McManus", publisher:"Delacorte Press ", ISBN: "1524714682", pageNumbers: 416};
+var JSONobj = JSON.stringify(JSobj);
+document.getElementById("demo").innerHTML = JSONobj;
+console.log(JSONobj);
+</script>
+
+<script>
+var JSobj2 = JSON.parse('{"first name":"Susan", "last name": "Pancheva", "ID": "2903 ", "jobtitle": "Accountant", "address":"57th St. New York"}');
+console.log(JSobj2);
+</script>
+
+
+</body>
+</html>
+
+
+
