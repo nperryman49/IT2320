@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" type="text/css" href="JsUnobtrusive.css" />
+        <title>Javascript Functions</title>
+        <script src="JsUnobtrusive.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>
+            <h2> Javascript DOM Demo</h2>            
+        </div>
+        <div class="wrapper">
+            <label>Enter a value ex: 300px</label><input type="text" id="inputSize"/>
+            <button id="btn1" class="btnOrig" onclick="changeSize()">Change Size</button>  
+            <input type="text" id="inputColor"/> 
+            <button id="btn11" class= "btnNew" onclick="changeColor()">Change Color</button>                 
+            <div id="box1" class="box">box1</div>               
+        </div>
+        <div  class="wrapper">
+            <label>Enter width  ex: 300px</label><input type="text" id="width"/>            
+            <label>Enter height ex: 300px</label><input type="text" id="height"/>        
+            <button id="btn2" class="btnOrig" onclick="changeShape()">Change Shape</button> 
+            <div id="box2" class="box">box2</div>            
+        </div>
+        <div id="parentLink" class="wrapper">
+            <label>Enter a website address ex:"http://www.google.com"</label>
+            <input type="text" id="linkContent1"/> 
+            <button  id="btn3" class="btnOrig" onclick="changeLinkContent()">Change Link</button>   
+            <a id="link1" href="http://www.google.com">Click here</a> 
+            <button id="btn4" class="btnNew" onclick="createLink()">Create Link</button>
+            <button id="btn5" class= "btnNew" onclick="removeLink()">Remove Link</button>
+        </div>
+        <div id="parentSq" class="wrapper">
+            <div class="square">1</div>           
+            <div class="square">2</div>           
+            <div class="square">3</div>           
+            <div class="square">4</div>  
+            <div class="clear">
+                <button id="btn4" class="btnOrig" onclick="changeSq()">Click me</button>   
+                <button id="btn5" class="btnOrig"onclick="createSq()">Create</button>
+                <button id="btn6" class="btnOrig" onclick="removeSq()">Remove</button>
+                <button id="btn7" class="btnNew" onclick="changeSquares()">Background Color Black</button>
+                <button id="btn8" class="btnNew" onclick="changeSquares2()">Background Color White</button> 
+                <input type="text" id="inputRadius"/>
+                <button id="btn9" class="btnNew" onclick="changeShapes()">Change Shape</button>
+            </div>            
+        </div>      
+    </body>
+</html>
