@@ -1,5 +1,5 @@
 
-$(function(){
+$(document).ready(function(){
    
 
     //all of jquery your code goes here
@@ -12,10 +12,26 @@ $(function(){
         ("#wrapper").show();
     })
 
-    for (var i=1; i<4; i++){
+    var numbers= 'jquery';
     $("btn3").click(function(){
-        $(".wrapperDiv").text();
+        $(".wrapperDiv");
+        switch (numbers) {
+            case '1':
+                text('one');
+                break;
+            case '2':
+                text('two');
+                break;
+            case '3':
+                text('three');
+                break;
+            case '4':
+                text('four');
+                break;}
+                
     })
+        
+    
 
     $("btn3").click(function(){
         $(".wrapperDiv:odd").css("background-color", "black");
@@ -35,5 +51,5 @@ $(function(){
         $(this).removeAttr("background-color","font-color", text);
                 
     })
-    }
+    
     });
