@@ -1,9 +1,6 @@
 //Global area
 window.onload=function() {
-//Try and use classname to get a group of divs instead of getting them one by one by id
-//if you are writing the same type of code multiple times, you are doing it incorrect
 
-//Attach events using eventlistener here
 var players=document.getElementsByClassName("col");
 for (i=0; i< players.length; i++)
 {
@@ -23,21 +20,21 @@ for (i=0; i< computers.length; i++)
 
 /************** Function area *******************/
 
-//function provided. Add parameter(s) if needed
+
 function userTurn(player)
 {
-    //Add code here
+    //where a user clicks, an "X" will be placed
     player.innerHTML="X";
    
 }
-    computerTurn();
+    computerTurn(); //computerTurn will automatically execute 
 
 
 
-//function provided. Add parameter(s) if needed
+
 function computerTurn()
 {
-    //Add code here
+    //if a box is not occupied by an X or O, an O will be put on the board during computerTurn
     var computers=document.getElementsByClassName("col");
     for (i=0; i<computers.length; i++)
     {
