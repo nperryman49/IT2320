@@ -2,19 +2,16 @@
 $(document).ready(function(){
    
 
-    //all of jquery your code goes here
-
     $("#btn1").click(function(){
-        $("#wrapper").hide();
-    })
+    $("#wrapper").hide();
+    }) 
 
     $("#btn2").click(function(){
         $("#wrapper").show();
     })
 
     
-    $("#btn3").click(function(){
-        
+    $("#btn3").click(function(){        
         $("#1").text("one");
         $("#2").text("two");
         $("#3").text("three");
@@ -25,9 +22,7 @@ $(document).ready(function(){
         $(".wrapperDiv:even").css("background-color", "black");
         $(".wrapperDiv:even").css("color", "white");
     })
-        
-    
-
+        //manipulating the appearance of the elements on screen to change background colors and text
     
 
     $(".wrapperDiv").mouseover(function(){
@@ -35,12 +30,12 @@ $(document).ready(function(){
         $(this).removeAttr("font-color");
         $(this).css("background-color", "yellow");
 
-    })
+    }) //using mouseover to change the appearance of the element by removing colors and applying another background color
 
     $(".wrapperDiv").mouseout(function(){
         $(this).removeAttr("style");
         
                 
-    })
+    }) //upon mouseout, the element's style will remove style changes seen on mouseover
     
     });
