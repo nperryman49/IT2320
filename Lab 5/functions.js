@@ -1,9 +1,9 @@
 /*********************************************************************/
 var globalX = 5;
 
-//function invocation needs name and ()
+//function invocation needs a name and ()
 console.log(add());//give function name and () and any parameters it takes
-console.log(add);//here i have not used () so entire function will be returned
+console.log(add);//Without (), entire function will be returned
 compare(35,15);
 var finalPrice = calc(100,0.05);
 console.log("Final prices is " + finalPrice);
@@ -25,8 +25,9 @@ function add()
     return (3+4);//return value
 }
 
-function compare(x,y)// input parameters
-{   //x and y are already defined so dont assign any values to them   
+function compare(x, y)// input parameters
+{   
+    //x and y are already defined so there is no need to assign/hard-code values to them   
 
     if (x>y)
         console.log("x is greater");
@@ -38,14 +39,14 @@ function compare(x,y)// input parameters
 
 }
 
-function calc(salesPrice, discount)//function with input parameters & return value
+function calc(salesPrice, discount)//function with input parameters & a return value
 {
     return (salesPrice - (salesPrice*discount));
 }
 
 function reportBMI()
 {
-      //BMI = weight * 703 / (height  * height)
+      //BMI = weight * 703 / (height * height)
     var employees = [
                 {name: "john", weight: 165, height: 60},
                 {name: "mary", weight: 146, height: 70},
@@ -53,8 +54,8 @@ function reportBMI()
                 ];//JS object array
     
     //"no name" function => anonymous function
-    //forEach => function(currentValue,index,parentArray)
-    employees.forEach( function(emp){
+    
+    employees.forEach(function(emp){
             emp.bmi = (emp.weight * 703)/(emp.height * emp.height);
             console.log(emp.bmi);
             var health = reportHealthStatus(emp.bmi);//regular function
@@ -81,7 +82,7 @@ function GlobalVsLocalScope1()
     console.log(globalX);
     globalX = 6000;
     console.log(x1);
-    //console.log(x2);//cant access x2 as it is local to the 2nd function only
+    //console.log(x2);//This function cannot access x2 as it is local to the 2nd function only
 }
 
 function GlobalVsLocalScope2()
@@ -115,7 +116,7 @@ const books = [
 ];
 
 
-function getDiscountedPrice() 
+function getDiscountedPrice() //the discounted price based on the getDiscount method will be calculated 
 {
     books.forEach(function(item) {
     console.log(item.price);
@@ -125,7 +126,7 @@ function getDiscountedPrice()
     )
 }   
        
-    function getDiscount(country)
+    function getDiscount(country) //depending on the country of the book, a discount percentage will be applied 
     {
     if (country== "US") 
         return 0.10;
