@@ -37,8 +37,8 @@ $(function(){
             success: function(data)
             {
               $("#results").text("");
-              console.log(data); //if only one item, do data.name, data.id and data.city
-              $.each(data,function(i,item){//parse items inside data array
+              console.log(data); //data.name, data.id and data.city
+              $.each(data,function(i,item){ //parse items inside data array
                 var para = $("<p></p>");
                 para.text(item.name +" "+ item.id  +" "+ item.city);
                 $("#results").append(para);
@@ -48,7 +48,7 @@ $(function(){
       });
 
      $("#button3").on("click", function(){        
-        /* In this, we will use the brewery's search functionality to find 
+        /* Using the brewery's search functionality to find 
         a list of breweries by the search term
         Example: https://api.openbrewerydb.org/breweries/search?query=dog*/
       
@@ -74,27 +74,24 @@ $(function(){
     });
         
         /*Base URL = "https://api.openbrewerydb.org/breweries/search?query="
-        Get the "search term" from the input with id="searchTerm"
-        Append it to the Base URL to get the url
-        Then call the ajax method with the url
-        Call the api's search method using the ajax method        
-        You will get a list of breweries
-        one by one, attach them to #results div
+        The "search term" is from the input with id="searchTerm"
+        This is appended it to the Base URL to get the full url
+        The ajax method is called with the url
+        A list of breweries return one by one, attached to the #results div
         */        
     
 
     $("#button4").on("click", function(){
-        /* In this, we will use the search functionality of the breweries api
-        Example: URL should look like this where we pass the Id of the brewery to find it
-        https://api.openbrewerydb.org/breweries/2
+        /* Using the search functionality of the breweries api with the ID
+        Example: https://api.openbrewerydb.org/breweries/2
 
         Base url is "https://api.openbrewerydb.org/breweries/"
         
-        Get the ID of the brewery from the input with id = "breweryId"
-         Append it to the Base URL to get the url
+        Getting the ID of the brewery from the input with id = "breweryId"
+        Appending it to the Base URL to get the url
         Then call the ajax method with the url
-        The result will be just one brewery
-        Get the brewery's id, brewery_type and name and show in the #results div
+        The result will be one brewery
+        Brewery's id, brewery_type and name are shown in the #results div
         */
         var searchTerm = $("#breweryId").val();
         var baseUrl = "https://api.openbrewerydb.org/breweries/";
