@@ -1,16 +1,14 @@
-/*********************************************************************/
-//Global Area
 
 window.onload=function()
 {
-    var btnOrig= document.getElementsByClassName("btnOrig");
+    var btnOrig= document.getElementsByClassName("btnOrig");  
     for (var i=0; i<btnOrig.length; i++)
      {
         btnOrig[i].addEventListener("click", function(){
             changeButtonText(this);
         })
         
-     }
+     }  //adding an event listener to a button
     
     var sqObj=document.getElementsByClassName("square");
     for (var x=0; x<sqObj.length; x++)
@@ -25,19 +23,20 @@ window.onload=function()
 
 
 /***************** Function definition area *************/
-//write a function to change the size of the box (css)
+//writing a function to change the size of the box (css)
 
 function changeButtonText(btnOrig)
 {
 
    btnOrig.innerHTML="Active";   
  
-}
+} //this changes the button's display 
 
 function changeSquare(sqObj)
 {
     sqObj.style.backgroundColor="green";
-}
+    
+} //changing the background color of chosen objects 
 
 function changeSize()
 {
@@ -72,9 +71,9 @@ function changeLinkContent()
 {
     var linkContent = document.getElementById("linkContent1").value;
 
-    var link = document.getElementById("link1");//the link that we are changing
-    link.href=linkContent;//updated what the link is pointing to
-    link.innerHTML = linkContent; //Updated what the link says
+    var link = document.getElementById("link1");//the link that is changing
+    link.href=linkContent;//updating what the link is pointing to
+    link.innerHTML = linkContent; //Updating what the link says
 }
 
 function changeShapes()
@@ -111,7 +110,7 @@ function changeSquares2()
 
 function changeSq()
 {
-    //I want to get all the divs that have class = "square"
+    
     var squares = document.getElementsByClassName("square");//returns more than 1 element
     //squares is an array
     for (var i=0; i<squares.length;i++)
@@ -130,7 +129,7 @@ function createSq(){
     var parent = document.getElementById("parentSq");
 
     var child = document.createElement("div");
-    child.classList.add("square");//add a class to the divs
+    child.classList.add("square");
 
     parent.appendChild(child);
 
