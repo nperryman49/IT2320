@@ -4,12 +4,12 @@
 Javascript comments can span single or multiple lines*/
 
 
-console.log("console log - hello world");//log in developer tools
-var globalX = 100;//global scope
+console.log("console log - hello world");
+var globalX = 100;//This variable has global scope
 
 function hello() //function definition
 {
-    alert("alert - hello world!");//popup window    
+    alert("alert - hello world!");// This will result in a popup window    
 }
 
 function add()//function definition
@@ -28,7 +28,6 @@ function substract()
     alert("Difference is" + diff);
 }
 
-//Homework Lab- Complete Multiplication and Division functionality
 
 function increment()
 { 
@@ -40,18 +39,6 @@ function increment()
 
 }
 
-/* JS statements
-Conditional statements:
-If statement
-Switch statement
-
-Loops:
-For loop
-While loop
-Do while loop
-
-Break
-*/
 
 function compare()
 {
