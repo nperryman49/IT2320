@@ -93,7 +93,7 @@ function IsTropical(fruit)//fruit is a variable and is an input parameter
             isTropical = false;            
     }
 
-    alert("Is "+ fruit+ " tropical?"+ isTropical );
+    alert("Is " + fruit+ " tropical?"+ isTropical );
 
 }
 
